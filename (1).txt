@@ -1,0 +1,155 @@
+(1)
+#include <stdio.h>
+void printHelloWorld();
+
+int main() {
+    
+    printHelloWorld();
+    return 0;
+}
+
+
+void printHelloWorld() {
+    printf("Hello, World!\n");
+}
+
+(2)
+#include<stdio.h>
+
+void add();
+int main(){
+    add();
+    return 0;
+}    
+void add(){
+    int a,b,c;
+    printf("enter the value of a and b ");
+    scanf("%d %d",&a,&b);
+    c=a+b;
+    printf("%d\n",c);
+}
+
+
+(3)
+#include<stdio.h>
+
+void sub();
+int main(){
+    sub();
+    return 0;
+}    
+void sub(){
+    int a,b,c;
+    printf("enter the value of a and b ");
+    scanf("%d %d",&a,&b);
+    c=a-b;
+    printf("%d\n",c);
+}
+
+(4)
+#include<stdio.h>
+
+void multi();
+int main(){
+    multi();
+    return 0;
+}    
+void multi(){
+    int a,b,c;
+    printf("enter the value of a and b ");
+    scanf("%d %d",&a,&b);
+    c=a*b;
+    printf("%d\n",c);
+}
+
+(5)
+#include<stdio.h>
+
+void devide();
+int main(){
+    devide();
+    return 0;
+}    
+void devide(){
+    int a,b,c;
+    printf("enter the value of a and b ");
+    scanf("%d %d",&a,&b);
+    c=a%b;
+    printf("%d\n",c);
+}
+
+(6)
+#include <stdio.h>
+void swap(int *a, int *b);
+
+int main() {
+    int num1, num2;
+    
+    printf("enter two integers:");
+    scanf("%d %d", &num1, &num2);
+    
+    printf(" num1 = %d, num2 = %d\n", num1, num2);
+    
+    swap(&num1, &num2);
+    
+    printf("num1 = %d, num2 = %d\n", num1, num2);
+    
+    return 0;
+}
+
+void swap(int *a, int *b) {
+    int temp;
+    
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+(7)
+#include<stdio.h>
+void swap(int *a, int *b);
+
+int main(){
+    int num1, num2;
+    
+    printf("enter two integer");
+    scanf("%d %d", &num1, &num2);
+    
+    printf("num1 = %d, num2 = %d\n",num1,num2);
+    
+    swap(&num1, &num2);
+    
+    printf("num1 = %d, num2 = %d\n",num1,num2);
+    
+    return 0;
+}
+
+void swap(int *a, int *b){
+    *a = *a + *b;
+    *b = *a - *b;
+    *a = *a - *b;
+}
+
+(8)
+#include<stdio.h>
+void armstrong(int n){
+    int ans=0;
+    int temp = n;
+    while(n>0){
+        int a = n%10;
+        ans = ans+a*a*a;
+        n=n/10;
+    }
+    if(ans == temp){
+        printf("%d is armstrong number",temp);
+    }
+    else{
+        printf("%d is not armstrong number",temp);
+    }
+}
+void main(){
+    armstrong(407);
+}
+
+(9)
+
